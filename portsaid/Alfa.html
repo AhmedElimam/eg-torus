@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Restaurant Page</title>
+    <style>
+        body {
+            background-color: #fafafa;
+        }
+        .logo {
+            background-color: #c39126;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+        }
+        .search-box {
+            position: relative;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-box input {
+            background-color: white;
+            font-size: 100%;
+            color: black;
+            width: 25%;
+            border-radius: 40px;
+            padding: 15px;
+            border: none;
+            margin-right: 15px;
+        }
+        .search-box input:focus {
+            box-shadow: none;
+        }
+        .icon {
+            color: white;
+            margin-left: 15px;
+        }
+        .restaurant-image {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .restaurant-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .button, .b {
+            background-color: #c39126;
+            color: white;
+            font-size: 20px;
+            width: 250px;
+            height: 60px;
+            border: none;
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+        }
+        .b {
+            background-color: #553e11;
+            height: 40px;
+            font-size: 17px;
+        }
+        .rating {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .rating i {
+            color: #b49937;
+        }
+        .description {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .location-link, .contact-info, .toon {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            color: #c39126;
+        }
+        .toon {
+            background-color: #553e11;
+            color: white;
+            border-radius: 12px;
+            padding: 10px 20px;
+            width: 150px;
+        }
+        .icon-forward {
+            text-align: center;
+            margin: 20px auto;
+            color: #553e11;
+        }
+        .footer {
+            width: 80%;
+            border-color: #f4c663;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .footer img {
+            width: 170px;
+            margin: 20px auto;
+        }
+        .footer-text, .footer-text-links {
+            color: #c39126;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .footer-text {
+            margin: 20px 0;
+        }
+        .footer-text-links {
+            font-size: 90%;
+        }
+        .download-app {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .download-app img {
+            width: 150px;
+        }
+        .footer-hr {
+            width: 850px;
+            border-color: #f4c663;
+            margin: 20px auto;
+        }
+        .footer-copyright {
+            text-align: center;
+            font-size: 90%;
+            color: #c39126;
+            margin: 10px 0;
+        }
+        #container{
+            width: 80% !important;
+            height: 80vh !important;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="../photos/Untitled design.png" alt="Logo" width="120px">
+    </div>
+    <div class="container search-box">
+        <input type="text" class="form-control form-input" placeholder="Search a place" style="color: #1d1402;">
+        <div class="icon">
+            <i class="fa-regular fa-circle-question"></i>
+        </div>
+        <div class="icon">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="icon">
+            <i class="fa-regular fa-circle-user"></i>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="restaurant-image">
+        <img src="../photo's alex/4b46997e7739c1d95fa8bef3afa1daea.jpeg" alt="Restaurant Image">
+    </div>
+    <button class="button" data-i18n="Restaurants">Restaurants</button>
+    <button class="b" data-i18n="Abo Elseed">Abo Elseed</button>
+    <div class="rating">
+        <strong>4.9 <i class="fa-solid fa-star"></i></strong>
+    </div>
+    <div class="description">
+        <h2 data-i18n="Abo Elseed description">
+            Abo Elseed is a well-known seafood restaurant located in Alexandria, Egypt,
+            renowned for its delicious and fresh seafood offerings. It is likely situated in a bustling
+            area of Alexandria, close to the Mediterranean Sea. Its location may offer scenic views
+            of the waterfront or a lively atmosphere characteristic of Alexandria's coastal neighborhoods.
+        </h2>
+    </div>
+    <a href="https://maps.app.goo.gl/8kbq4QdLGXUCAHNC7" target="_blank" class="location-link">
+        <i class="fa-solid fa-location-dot"></i> https://maps.app.goo.gl/8kbq4QdLGXUCAHNC7
+    </a>
+    <h3 class="contact-info" data-i18n="contact-info">01212166660<br>Always open</h3>
+    <button class="toon" data-i18n="Explore more">Explore more</button>
+    <div class="icon-forward">
+        <i class="fa-solid fa-forward"></i>
+    </div>
+</main>
+<hr class="footer">
+
+<div id="container"></div>
+
+<hr class="footer">
+<footer>
+    <div class="container text-center">
+        <img src="../../photos/Egyp our2.png" alt="Logo" width="170px" style="margin-right: 30px;">
+        <p class="footer-text" data-i18n="footer-text">
+            Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Pages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Our Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            About Us
+        </p>
+        <h4 class="footer-text-links" data-i18n="footer-text-links">
+            For better experience, download our mobile app<br>
+            Download the app by clicking the link below:
+        </h4>
+        <div class="download-app">
+            <img src="../../photos/62907e92d450eba80453cde440ebaa2a.png" alt="Download App 1" width="150px">
+            <img src="./../photos/bc4ddba2d2248ba316dce480f313b27a.png" alt="Download App 2" width="150px" height="45px" style="margin-top: 7px;">
+        </div>
+        <hr class="footer-hr">
+        <p class="footer-text-links" data-i18n="footer-copyright">
+            All copyrights are reserved by 2024 seniors
+        </p>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"
+        integrity="sha512-uWKImujbh9CwNa8Eey5s8vlHDB4o1HhrVszkympkm5ciYTnUEQv3t4QHU02CUqPtdKTg62FsHo12x63q6u0wmg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/panolens@0.12.1/build/panolens.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.11.5/i18next.min.js" integrity="sha512-3RSGkmT48HnO+hlmzGYDx5/w2LIBX0O5hSuYX6KWAxmvVlSjFgoxIaWa2tlMExheGvt3lLyxeTsXfpC47yb8CQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.0.1/dist/umd/i18nextBrowserLanguageDetector.js"></script>
+<script src="./panroma.js"></script>
+<script src="../sc.js"></script>
+</body>
+</html>
