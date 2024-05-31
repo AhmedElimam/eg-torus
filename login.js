@@ -31,11 +31,10 @@ function login() {
         successMessageDisplayed = true;
         localStorage.setItem("token", JSON.stringify(data.data.token));
         localStorage.setItem("id", JSON.stringify(data.data.id));
-        window.location.href = "Egyptour-main/New folder/home2.html";
+        window.location.href = "./index.html";
     })
     .catch((error) => {
         console.error("Error:", error);
-        // alert("An error occurred. Please try again later.");
     });
 }
 // eye

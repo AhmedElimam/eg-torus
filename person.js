@@ -186,7 +186,6 @@
 //     input.type = "file";
 //     input.setAttribute("accept", "image/*");
 //     input.setAttribute("capture", "gallery");
-
 //     input.addEventListener("change", function (event) {
 //         const file = event.target.files[0];
 //         if (file) {

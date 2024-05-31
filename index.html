@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Calistoga&family=Margarine&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>EGTOURS</title>
 </head>
 <body>
 <header>
@@ -27,14 +27,8 @@
             <a href="./login.html" class="pd" id="login">
                 <button type="button" class="btn btn-warning text-white" data-i18n="login">Login</button>
             </a>
-            <div class="toggle-switch d-flex">
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="language-toggle">
-                    <label class="custom-control-label" for="language-toggle">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/32px-Flag_of_the_United_States.svg.png" alt="English Flag" class="flag-icon" id="language-flag">
-                    </label>
-                </div>
-            </div>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('ar')">العربية</button>
         </div>
     </div>
 </header>
