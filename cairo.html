@@ -49,225 +49,163 @@
         </div>
     </nav>
     <div class="container-fluid">
-                <div class="card text-bg-dark">
-                    <img src="./photos/majestic-pyramid-shape-awe-inspiring-ancient-civilization-monument-generated-by-ai.jpg" class="card-img" alt="..." style="opacity: 80%;">
-                    <div class="card-img-overlay" style="position: absolute;">
-                    <h1 class="card-title" style="font-size: 70px; position:relative; top: 280px;margin-left: 100px; font-family: Bungee Inline;">CAIRO ..THE CAPITAL</h1>
-                    <p class="card-text"  style="font-size: 42px;  position:relative; top: 270px;margin-left: 100px;font-family: Crimson Pro;">Exploring the ancient wonders of Cairo.</p>
-                    </div>
+        <div class="card text-bg-dark">
+            <img src="./photos/majestic-pyramid-shape-awe-inspiring-ancient-civilization-monument-generated-by-ai.jpg" class="card-img" alt="..." style="opacity: 80%;">
+            <div class="card-img-overlay" style="position: absolute;">
+                <h1 class="card-title" style="font-size: 70px; position:relative; top: 280px;margin-left: 100px; font-family: Bungee Inline;" data-i18n="cairoCapital">CAIRO ..THE CAPITAL</h1>
+                <p class="card-text"  style="font-size: 42px;  position:relative; top: 270px;margin-left: 100px;font-family: Crimson Pro;" data-i18n="ancientWonders">Exploring the ancient wonders of Cairo.</p>
+            </div>
         </div>
     </div>
+
     <div class="container">
         <div class="row" style="position: relative;">
-                <p class=" bg-transparent" style="font-family: Margarine; font-size: 35px; ">Let's explore our history </p>
+            <p class=" bg-transparent" data-i18n="exploreHistory" style="font-family: Margarine; font-size: 35px; ">Let's explore our history </p>
         </div>
     </div>
     <hr class="border border-secondary m-1">
-    <div class="container d-flex justify-content-between mt-5 mb-5 ">
-            <div class="child1">
-                <p class="h1">Historical Sites</p>
-            <p class="h5">Gold is made for kings and pharaohs</p>
+    <div class="d-flex justify-content-center py-5">
+        <div class="col-md-8 col-lg-6 col-xl-5">
+
+            <div class="card text-body" style=" border-radius: 35px;">
+                <div class="card-body p-4">
+
+                    <div class="d-flex">
+                        <h6 class="flex-grow-1">Warsaw</h6>
+                        <h6>15:07</h6>
+                    </div>
+
+                    <div class="d-flex flex-column text-center mt-5 mb-4">
+                        <h6 class="display-4 mb-0 font-weight-bold"> 13°C </h6>
+                        <span class="small" style="color: #868B94">Stormy</span>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="flex-grow-1" style="font-size: 1rem;">
+                            <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 40 km/h </span>
+                            </div>
+                            <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 84% </span></div>
+                            <div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1"> 0.2h </span></div>
+                        </div>
+                        <div>
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
+                                 width="150px">
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="child2">
-                    <div class="input-group">
-                        <input type="search" class="form-control" id="search-input" placeholder="Search a place" style="background-color: #E1B24D; border-radius: 20px; width: 300px;" onkeyup="search()">
-                    <!-- <div class="input-group-lg">
-                        <span class="input-group-text" id="search-icon"><i class="fas fa-search"></i></span>
-                    </div> -->
+
+        </div>
+    </div>
+    <div class="container d-flex justify-content-between mt-5 mb-5">
+        <div class="child1">
+            <p class="h1" data-i18n="historicalSites">Historical Sites</p>
+            <p class="h5" data-i18n="goldQuote">Gold is made for kings and pharaohs</p>
+        </div>
+        <div class="child2">
+            <div class="input-group">
+                <input type="search" class="form-control" id="search-input" placeholder="Search a place" style="background-color: #E1B24D; border-radius: 20px; width: 300px;" data-i18n-placeholder="searchPlace" onkeyup="search()" >
             </div>
-            </div>
-            </div>
+        </div>
+    </div>
             <div id="searchResults">No Result Found</div>
             <div id="historical"></div>
-    <div class="Museum-list container d-flex  mb-4">
+    <div class="Museum-list container d-flex mb-4">
         <div class="Museum card crd" style="width: 20rem;">
             <img src="./photos/2ce13d0a7825ff8080ae074a7bbc6cda.jpeg" class="card-img-top" alt="...">
             <div class="card-body text-center">
-            <h5 class="card-title">Pyramids</h5>
-            <div class="left">
-                <div class="rate rounded-circle">4.8 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
-                <div class="bt">
-                    <a href=".//cario/Pyramids.html" target="_blank"><button class="btn" >Explore</button></a>
+                <h5 class="card-title" data-i18n="pyramids">Pyramids</h5>
+                <div class="left">
+                    <div class="rate rounded-circle">4.8 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
+                    <div class="bt">
+                        <a href=".//cario/Pyramids.html" target="_blank"><button class="btn" data-i18n="explore">Explore</button></a>
+                    </div>
+                    <div class="f">
+                        <button class="btn favorite-btn" data-id="1"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
+                    </div>
                 </div>
-                <div class="f">
-                    <button class="btn favorite-btn" data-id="1"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                </div>
-            </div>
             </div>
         </div>
         <div class="Museum card crd" style="width: 20rem;">
             <img src="./photos/9d4b5533bb400686df81d837cd1be3bc.jpeg" class="card-img-top" alt="...">
             <div class="card-body text-center">
-            <h5 class="card-title">Baron palace</h5>
-            <div class="left">
-                <div class="rate rounded-circle">4.8 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
-                <div class="bt">
-                    <a href=".//cario/Baron Palace.html" target="_blank"><button class="btn" >Explore</button></a>
+                <h5 class="card-title" data-i18n="baronPalace">Baron palace</h5>
+                <div class="left">
+                    <div class="rate rounded-circle">4.8 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
+                    <div class="bt">
+                        <a href=".//cario/Baron Palace.html" target="_blank"><button class="btn" data-i18n="explore">Explore</button></a>
+                    </div>
+                    <div class="f">
+                        <button class="btn favorite-btn" data-id="2"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
+                    </div>
                 </div>
-                <div class="f">
-                    <button class="btn favorite-btn" data-id="2"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                </div>
-            </div>
             </div>
         </div>
         <div class="Museum card crd" style="width: 20rem;">
             <img src="./photos/a40863f2a929e9c6dc4af255fd3d928c.jpeg" class="card-img-top" alt="..." height="90%">
             <div class="card-body text-center">
-            <h5 class="card-title">Bab Zuweila</h5>
-            <div class="left">
-                <div class="rate rounded-circle">3.8 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
-                <div class="bt">
-                    <a href=".//cario/bab zuw.html" target="_blank"><button class="btn" >Explore</button></a>
+                <h5 class="card-title" data-i18n="babZuweila">Bab Zuweila</h5>
+                <div class="left">
+                    <div class="rate rounded-circle">3.8 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
+                    <div class="bt">
+                        <a href=".//cario/bab zuw.html" target="_blank"><button class="btn" data-i18n="explore">Explore</button></a>
+                    </div>
+                    <div class="f">
+                        <button class="btn favorite-btn" data-id="3"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
+                    </div>
                 </div>
-                <div class="f">
-                    <button class="btn favorite-btn" data-id="3"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                </div>
-            </div>
             </div>
         </div>
     </div>
-    <div class="Museum-list container d-flex  mb-4">
-        <div class="Museum card crd" style="width: 20rem;">
-            <img src="./photos/WhatsApp Image 2024-04-19 at 2.16.34 AM.jpeg" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-            <h5 class="card-title">Cairo tower</h5>
-            <div class="left">
-                <div class="rate rounded-circle">4.9 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i>
-                </div>
-                <div class="bt">
-                    <a href="./cario/cario tower.html" target="_blank"><button class="btn" >Explore</button></a>
-                </div>
-                <div class="f">
-                    <button class="btn favorite-btn" data-id="4"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="Museum card crd" style="width: 20rem;">
-            <img src="./photos/f5f8e5b0e377bba72ebd495ab1513d0a2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-            <h5 class="card-title">The Hanging Chruch</h5>
-            <div class="left">
-                <div class="rate rounded-circle">4.7 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
-                <div class="bt">
-                    <a href="./cario/Hanging Church.html" target="_blank"><button class="btn" >Explore</button></a>
-                </div>
-                <div class="f">
-                    <button class="btn favorite-btn" data-id="5"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="Museum card crd" style="width: 20rem;">
-            <img src="./photos/5f3c08058b1cde593785c34f17ab5fd5.jpeg" class="card-img-top" alt="..." >
-            <div class="card-body text-center">
-            <h5 class="card-title">Amr ibn Al-A'as Mosque</h5>
-            <div class="left">
-                <div class="rate rounded-circle">4.0 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
-                <div class="bt">
-                    <a href="./cario/Amr ibn Al-A'as.html" target="_blank"><button class="btn" >Explore</button></a>
-                </div>
-                <div class="f">
-                    <button class="btn favorite-btn" data-id="6"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                </div>
-            </div>
-                        </div>
-                </div>
-    </div>
-    <div class="Museum-list container d-flex  mb-4">
-        <div class="Museum card crd" style="width: 20rem;">
-            <img src="./photos/fa78d9621b246b3177062c227eadaf71.jpeg" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-            <h5 class="card-title">Mosque-Madrasa of Sultan Hassan</h5>
-            <div class="left">
-                <div class="rate rounded-circle">3.7 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
-                <div class="bt">
-                    <a href="./cario/Mosque-Madrasa.html" target="_blank"><button class="btn" >Explore</button></a>
-                        </div>
-                        <div class="f">
-                            <button class="btn favorite-btn" data-id="7"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                        </div>
-                </div>
-            </div>
-            </div>
-        <div class="Museum card crd" style="width: 20rem;">
-            <img src="./photos/5f0bfbba1c7354cb3148b5273dea9996.jpeg" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-            <h5 class="card-title">Ibn Tulun Mosque</h5>
-            <div class="left">
-                <div class="rate rounded-circle">3.5 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
-                <div class="bt">
-                    <a href="./cario/ibn tulun.html" target="_blank"><button class="btn" >Explore</button></a>
-                </div>
-                <div class="f">
-                    <button class="btn favorite-btn" data-id="8"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="Museum card crd" style="width: 20rem;">
-            <img src="./photos/f2ee2285cbad0b368087fb23a604311d.jpeg" class="card-img-top" alt="..." >
-            <div class="card-body text-center">
-            <h5 class="card-title">Capritage Helwan</h5>
-            <div class="left">
-                <div class="rate rounded-circle">3.5 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
-                <div class="bt">
-                    <a href="./cario/Capritage.html" target="_blank"><button class="btn" >Explore</button></a>
-                </div>
-                <div class="f">
-                    <button class="btn favorite-btn" data-id="9"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-    <div class="Museum-list container d-flex  mb-4">
+    <div class="Museum-list container d-flex mb-4">
         <div class="Museum card crd" style="width: 20rem;">
             <img src="./photos/b749682e6c41cdcc2676e9be033ea715.jpeg" class="card-img-top" alt="...">
             <div class="card-body text-center">
-            <h5 class="card-title">Cairo Opera House</h5>
-            <div class="left">
-                <div class="rate rounded-circle">4.5 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
-                <div class="bt">
-                    <a href="./cario/opera hou.html" target="_blank"><button class="btn" >Explore</button></a>
+                <h5 class="card-title" data-i18n="cairoOperaHouse">Cairo Opera House</h5>
+                <div class="left">
+                    <div class="rate rounded-circle">4.5 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
+                    <div class="bt">
+                        <a href="./cario/opera hou.html" target="_blank"><button class="btn" data-i18n="explore">Explore</button></a>
+                    </div>
+                    <div class="f">
+                        <button class="btn favorite-btn" data-id="10"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
+                    </div>
                 </div>
-                <div class="f">
-                    <button class="btn favorite-btn" data-id="10"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                </div>
-            </div>
             </div>
         </div>
         <div class="Museum card crd" style="width: 20rem;">
             <img src="./photos/dcddef4da0fe39d845a5b50fbad23eb9.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
-            <h5 class="card-title">Great Sphinx of Giza</h5>
-            <div class="left">
-                <div class="rate rounded-circle">4.8 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
-                <div class="bt">
-                    <a href="./cario/Great Sphinx.html" target="_blank"><button class="btn" >Explore</button></a>
+                <h5 class="card-title" data-i18n="greatSphinxOfGiza">Great Sphinx of Giza</h5>
+                <div class="left">
+                    <div class="rate rounded-circle">4.8 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
+                    <div class="bt">
+                        <a href="./cario/Great Sphinx.html" target="_blank"><button class="btn" data-i18n="explore">Explore</button></a>
+                    </div>
+                    <div class="f">
+                        <button class="btn favorite-btn" data-id="11"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
+                    </div>
                 </div>
-                <div class="f">
-                    <button class="btn favorite-btn" data-id="11"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                </div>
-            </div>
             </div>
         </div>
         <div class="Museum card crd" style="width: 20rem;">
-            <img src="./photos/0f59badc87abb050c1c7f58257ac62e2.jpeg" class="card-img-top" alt="..." >
+            <img src="./photos/0f59badc87abb050c1c7f58257ac62e2.jpeg" class="card-img-top" alt="...">
             <div class="card-body text-center">
-            <h5 class="card-title">Saqqara Necropolis</h5>
-            <div class="left">
-                <div class="rate rounded-circle">4.3 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
-                <div class="bt">
-                    <a href="./cario/Saqqara Necropolis.html" target="_blank"><button class="btn" >Explore</button></a>
+                <h5 class="card-title" data-i18n="saqqaraNecropolis">Saqqara Necropolis</h5>
+                <div class="left">
+                    <div class="rate rounded-circle">4.3 <i class="fa-solid fa-star fa-2xs" style="color: #ffffff;"></i></div>
+                    <div class="bt">
+                        <a href="./cario/Saqqara Necropolis.html" target="_blank"><button class="btn" data-i18n="explore">Explore</button></a>
+                    </div>
+                    <div class="f">
+                        <button class="btn favorite-btn" data-id="12"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
+                    </div>
                 </div>
-                <div class="f">
-                    <button class="btn favorite-btn" data-id="12"><i class="fa-brands fa-gratipay fa-2xl far" style="color: #ffb24d; margin-left: 5px;margin-top: 22px;"></i></button>
-                </div>
-            </div>
             </div>
         </div>
-    </div> 
+    </div>
+
     <div class="container d-flex justify-content-between mt-5 mb-5 ">
         <div class="child1">
             <p class="h1">Museums & Exhibitions</p>
@@ -743,5 +681,8 @@
             <script src="./sc.js"></script>
             <script src="./scroll.js"></script>
             <!-- <script src="./script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.11.5/i18next.min.js" integrity="sha512-3RSGkmT48HnO+hlmzGYDx5/w2LIBX0O5hSuYX6KWAxmvVlSjFgoxIaWa2tlMExheGvt3lLyxeTsXfpC47yb8CQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.0.1/dist/umd/i18nextBrowserLanguageDetector.js"></script>
+    <script src="./sc.js"></script>
 </body>
 </html>

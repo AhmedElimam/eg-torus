@@ -18,23 +18,24 @@
     <br>
     <div class="con"></div>
     <div class="rest">
-        <div style="padding-top:40px;" >
-            <h1 data-i18n="">Reset your password</h1> <br>
-            <p>Enter your email address and we will send you instructions to reset your password </p> <br>
+        <div style="padding-top:40px;">
+            <h1 data-i18n="resetPasswordTitle">Reset your password</h1> <br>
+            <p data-i18n="resetPasswordInstructions">Enter your email address and we will send you instructions to reset your password</p> <br>
             <form action="" class="form-icon">
-                <input type="email" placeholder="Enter your email address" id="email">
+                <input type="email" placeholder="Enter your email address" id="email" data-i18n="[placeholder]enterEmailPlaceholder">
                 <i class="fa-solid fa-envelope"></i>
             </form>
             <br><br><br><br><br><br>
         </div>
         <div style="justify-content:flex-end;">
-            <a href="login.html" class="aa">Back to login</a>
-            
-                <button id="continueButton">Continue</button>
-            <br><br><br><br>
+            <a href="login.html" class="aa" data-i18n="backToLogin">Back to login</a>
+            <button id="continueButton" data-i18n="continueButton">Continue</button>
         </div>
     </div>
 </div>
 <script src="reset.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.11.5/i18next.min.js" integrity="sha512-3RSGkmT48HnO+hlmzGYDx5/w2LIBX0O5hSuYX6KWAxmvVlSjFgoxIaWa2tlMExheGvt3lLyxeTsXfpC47yb8CQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.0.1/dist/umd/i18nextBrowserLanguageDetector.js"></script>
+    <script src="./sc.js"></script>
 </body>
 </html>
