@@ -110,9 +110,10 @@ html, body {
 }
 .navbar
 {
-    position: absolute;
-    bottom: 10%;
-    font-size: 2px;
+    position: relative;
+    margin-top: 0;
+    height: 10vh;
+    font-size: 18px;
 
 }
 .logo2

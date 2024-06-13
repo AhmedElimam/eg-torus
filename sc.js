@@ -590,8 +590,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //weather endpoint
-async function getWeatherData(){
-    const endPoint = "https://www.meteosource.com/api/v1/free/point?lat=%2030.0444&lon=31.2358&sections=current%2Chourly&language=en&units=auto&key=omrk718789boeo6cjd0o2r8t6kbd0n1kj6w8djkd"
+async function getWeatherData() {
+    const endPoint = "https://www.meteosource.com/api/v1/free/point?lat=30.0444&lon=31.2358&sections=current%2Chourly&language=en&units=auto&key=omrk718789boeo6cjd0o2r8t6kbd0n1kj6w8djkd";
 
     const headers = {
         'Content-Type': 'application/json'
@@ -600,9 +600,28 @@ async function getWeatherData(){
         method: 'GET',
         headers: headers,
     }
-    const response = await fetch(endPoint, requestOptions,{})
+    const response = await fetch(endPoint, requestOptions);
     const data = await response.json();
-    console.log(data)
+    console.log(data);
+
+    // Update the UI with the fetched data
+    document.getElementById('location').textContent = `Cairo`;
+    document.getElementById('time').textContent = new Date().toLocaleTimeString('en-US', { timeZone: 'Africa/Cairo', hour: '2-digit', minute: '2-digit' });
+    document.getElementById('temperature').textContent = `${data.current.temperature}°C`;
+    document.getElementById('summary').textContent = data.current.summary;
+    document.getElementById('wind-speed').textContent = `${data.current.wind.speed} km/h`;
+    // Assuming there is humidity data available in the API response; if not, replace with actual field name or remove.
+    document.getElementById('humidity').textContent = hourly[0];
+    // Assuming there is sun hours data available in the API response; if not, replace with actual field name or remove.
+    document.getElementById('sun-hours').textContent = `Sun hours data not available`;
+
+    // Update the weather icon based on the API's icon field.
+    const iconMap = {
+        "clear": "clear-icon-url",
+        // Map other possible icon values to their respective image URLs
+    };
+    document.getElementById('weather-icon').src = iconMap[data.current.icon] || "default-icon-url";
 }
+
 getWeatherData();
 
